@@ -25,6 +25,9 @@ export const App = () => {
             <li>Who's using Go?</li>
             {/* ITG! Don't take my word for it; these big companies are using it. What for? */}
 
+            <li>Go in Action</li>
+            {/* Examples of how to do some things in Go, maybe as vertical slides, might be too much?! */}
+
             <li>Resources to get you started</li>
             {/* Installation? The Go Tour, language spec, any books? */}
           </ul>
@@ -46,6 +49,10 @@ export const App = () => {
 
       <section>
         <h2 className="r-fit-text">Who's using Go?</h2>
+      </section>
+
+      <section>
+        <h2 className="r-fit-text">Go in Action</h2>
       </section>
 
       <section>
