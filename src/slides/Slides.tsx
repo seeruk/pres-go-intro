@@ -46,21 +46,23 @@ export const Slides = () => {
       <section className="text-left" data-auto-animate="">
         <h2>What is Go?</h2>
         <p>
-          Go is a programming language designed at Google to solve many of the challenges facing
-          developers in an era of multicore processors, networked machines, and large codebases.
+          Go is a programming language designed at, and supported by Google, that aims to make it
+          easy to build simple, reliable, and efficient software.
         </p>
+
         <div className="flex gap-4 w-full items-center">
           <div className="w-full">
             <p>It is:</p>
             <ul>
-              <li>High-level</li>
+              <li>High-level & Garbage collected</li>
               <li>C-like in syntax</li>
-              <li>Statically typed</li>
-              <li>Garbage collected</li>
+              <li>Statically, and structurally typed</li>
+              <li>Compiled</li>
               <li>Efficient and performant</li>
               <li>Easy to learn, read, and write</li>
             </ul>
           </div>
+
           <div className="w-full">
             <CodeBlock className="mt-4">{`
               package main
@@ -73,20 +75,29 @@ export const Slides = () => {
             `}</CodeBlock>
           </div>
         </div>
+
+        <aside className="notes">
+          <p>
+            Structural typing is a class of type system where type compatibility and equivalence are
+            determined by the type's actual structure or definition and not by other characteristics
+            such as the name given to the type.
+          </p>
+        </aside>
       </section>
 
       <section className="text-left" data-auto-animate="">
-        <h2>What is Go?</h2>
+        <h2>History</h2>
         <p>
-          More specifically, Go was built to address issues that Google faced with languages like
-          C++ and Java.
+          Go was built to address issues that Google faced with other languages they use; in
+          particular, to improve productivity in an era of multicore processors, networked systems,
+          and large codebases.
         </p>
         <p>
           The designers of the language had some specific goals in mind. They wanted a clean, small,
           compiled language with modern features.
         </p>
         <p>
-          They had to be clear about what was wrong:
+          They identified some specific issues with other languages to address:
         </p>
         <ul>
           <li>Complexity (of the language, tooling, and ecosystem)</li>
@@ -94,18 +105,23 @@ export const Slides = () => {
           <li>Lack of scalability</li>
           <li>"Insane" build times</li>
         </ul>
-      </section>
 
-      <section className="text-left" data-auto-animate="">
-        <h2>What is Go?</h2>
-        <p>
-          The core team had some guiding principles that shaped the way the language was developed:
-        </p>
-        <ul>
-          <li>Simplicity, safety, and readability are paramount</li>
-          <li>Orthogonality in design</li>
-          <li>It's about expressing algorithms, not the type system</li>
-        </ul>
+        <aside className="notes">
+          <p>
+            Go is very much a "batteries-included" language.
+          </p>
+          <p>
+            Go was initially built in 2007 and subsequently released to the public in 2009.
+          </p>
+          <p>
+            Lack of scalability here refers to the ability to write and maintain large codebases,
+            scaling up to large teams, and large systems. Orthogonality is key here, AKA Go is
+            "boring". It's about expressing algorithms (and business logic), not the type system.
+          </p>
+          <p>
+            The story goes that Go was designed while waiting for other programs to compile.
+          </p>
+        </aside>
       </section>
 
       {/* End What is Go? */}
