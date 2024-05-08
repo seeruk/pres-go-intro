@@ -16,11 +16,11 @@ export const Slides = () => {
             <li>What is Go?</li>
             {/* Including some history, and the principles behind the language*/}
 
-            <li>Why use Go?</li>
-            {/* Cover language itself, tooling, ecosystem, etc. Easy to learn, great for teams. */}
-
             <li>Who's using Go?</li>
             {/* ITG! Don't take my word for it; these big companies are using it. What for? */}
+
+            <li>Why use Go?</li>
+            {/* Cover language itself, tooling, ecosystem, etc. Easy to learn, great for teams. */}
 
             <li>Go in Action</li>
             {/* Examples of how to do some things in Go, maybe as vertical slides, might be too much?! */}
@@ -31,8 +31,8 @@ export const Slides = () => {
 
           <p className="mt-8 text-xs">
             Don't worry excited future Gopher, these slides are<br />
-            also <a target="_blank" href="https://pres-go-intro.pages.dev">available online</a>
-            for you to view later!
+            also <a target="_blank" href="https://pres-go-intro.pages.dev">available online</a> for
+            you to view later!
           </p>
         </div>
       </section>
@@ -54,7 +54,7 @@ export const Slides = () => {
           <div className="w-full">
             <p>It is:</p>
             <ul>
-              <li>High-level & Garbage collected</li>
+              <li>High-level & garbage collected</li>
               <li>C-like in syntax</li>
               <li>Statically, and structurally typed</li>
               <li>Compiled</li>
@@ -126,21 +126,43 @@ export const Slides = () => {
 
       {/* End What is Go? */}
 
-      {/* Why use Go? */}
-
-      <section>
-        <h2 className="r-fit-text">Why use Go?</h2>
-      </section>
-
-      {/* End Why use Go? */}
-
       {/* Who's using Go? */}
 
-      <section>
+      <section data-auto-animate="">
         <h2 className="r-fit-text">Who's using Go?</h2>
       </section>
 
+      <section className="text-left" data-auto-animate="">
+        <h2>Who's using Go?</h2>
+        <p>Go is arguably the language of the Cloud.</p>
+      </section>
+
       {/* End Who's using Go? */}
+
+      {/* Why use Go? */}
+
+      <section data-auto-animate="">
+        <h2 className="r-fit-text">Why use Go?</h2>
+      </section>
+
+      <section className="text-left" data-auto-animate="">
+        <h2>Why use Go?</h2>
+        <p>
+          Here are some more reasons to go with Go:
+        </p>
+        <ul className="text-sm">
+          <li>Very stable language and standard library, with a <a target="_blank" href="https://go.dev/doc/go1compat">Compatibility Promise</a></li>
+          <li>Built in tooling for dependency management, building, testing, formatting code, linting, profiling, serving documentation, detecting data races, and more...</li>
+          <li>Batteries-included, high-quality standard library covering error handling, logging, database access, networking, templating, various forms of IO, testing, and (<a target="_blank" href="https://pkg.go.dev/std">lots</a>) more...</li>
+          <li>Go code compiles to a native executable, and supports cross-compilation, including the potential to output statically linked binaries</li>
+          <li>Built-in concurrency support in the form of "goroutines" (lightweight threads), with primitives for communication between them (channels)</li>
+        </ul>
+        <p>
+          We'll cover most of this in a little more detail in the next few slides.
+        </p>
+      </section>
+
+      {/* End Why use Go? */}
 
       {/* Go in Action */}
 
@@ -185,6 +207,18 @@ export const Slides = () => {
             https://survey.stackoverflow.co/2023/#technology-admired-and-desired
           </a>
         </p>
+      </section>
+
+      {/* The End */}
+
+      <section>
+        <p>Oh and by the way....</p>
+        <h2 className="r-fit-text fragment">Go is just Go not G.O. or Golang!</h2>
+      </section>
+
+      <section>
+        <h2>Thank you!</h2>
+        <p>Any questions?</p>
       </section>
     </>
   )
