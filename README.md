@@ -1,8 +1,11 @@
-# An Introduction to Go
+# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
 
-A presentation introduction Go (Golang) to developers who may not have used it before. It covers the
-what, why, and who of Go, showcasing some of the language's features and possible use cases.
+To start the slide show:
 
-## License
+- `pnpm install`
+- `pnpm dev`
+- visit <http://localhost:3030>
 
-MIT
+Edit the [slides.md](./slides.md) to see the changes.
+
+Learn more about Slidev at the [documentation](https://sli.dev/).
