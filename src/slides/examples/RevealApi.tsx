@@ -3,7 +3,7 @@ import { HTMLAttributes, PropsWithChildren, useState } from "react"
 import { useDeck } from "@/context/deck"
 
 const Button = ({ children, ...props }: PropsWithChildren<HTMLAttributes<HTMLButtonElement>>) => {
-  return <button className="bg-neutral-700 px-2 py-1 rounded-sm" {...props}>{children}</button>
+  return <button className="bg-neutral-700 px-2 py-1 rounded-xs" {...props}>{children}</button>
 }
 
 export const ExampleRevealApiSlide = () => {
