@@ -1,9 +1,10 @@
 ---
 # You can also start simply with 'default'
-theme: ./theme
+theme: default
+colorSchema: dark
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+#background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: An Introduction to Go
 info: |
@@ -15,12 +16,13 @@ info: |
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
+transition: view-transition
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 layout: cover
-color: go
 ---
+
+<img v-drag="[654,197,284,284]" src="./images/gopher.svg">
 
 # An Introduction to Go
 
@@ -35,25 +37,143 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-layout: default
-color: cyan-light
-class: flex flex-col justify-center
+layout: center
 ---
 
 # What we're about to cover
 
-<div class="ns-c-tight">
+<div class="max-w-[600px]">
 
 * What is Go?
-* Who's using Go?
 * Why use Go?
-* Go in Action?
+* Go in Action
 * Resources to get you started
- 
-</div>
 
 These slides are also [available online](https://pres-go-intro.pages.dev) for you to view later, if
 you want!
+
+</div>
+
+---
+layout: section
+---
+
+# What is Go?
+
+---
+layout: center
+---
+
+# What is Go?
+
+<div class="max-w-[600px]">
+
+Go is a programming language designed at, and supported by Google, that aims to make it easy to 
+build simple, reliable, and efficient software.
+
+<div class="flex gap-8">
+
+<div>
+
+It is:
+
+* High-level & garbage collected
+* C-like in syntax
+* Statically, and structurally typed
+* Compiled
+* Efficient and performant
+* Easy to learn, read, and write
+
+</div>
+
+<div class="grow flex items-center">
+<div class="grow">
+
+```go {*}{lines:true}
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, 世界")
+}
+```
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!--
+Structural typing is a class of type system where type compatibility and equivalence are determined
+by the type's actual structure or definition and not by other characteristics such as the name given
+to the type.
+-->
+
+---
+layout: center
+---
+
+# Why was it created?
+
+<div class="max-w-[600px]">
+
+The team behind Go saw problems with how software was being developed at Google, and designed the 
+language to address issues faced "today".
+
+* Complexity (of the language, tooling, and ecosystem)
+* Missing or poor concurrency support
+* Lack of scalability
+* "Insane" build times
+
+Go is designed to be a clean, small, compiled language with modern features, aiming to tackle
+improving productivity in an era of multicore processors, networked systems, and large codebases.
+
+It's about **expressing algorithms**, not the type system.
+
+<img v-drag="[648,191,170,148]" src="./images/compiling.png" />
+
+</div>
+
+<!--
+Some of this is taken from a presentation that one of the creators of Go gave.
+https://go.dev/talks/2015/gophercon-goevolution.slide#5
+
+More background:
+https://go.dev/talks/2012/splash.article#TOC_3.
+
+Go is very much a "batteries-included" language.
+
+Go was initially built in 2007 and subsequently released to the public in 2009.
+
+Lack of scalability here refers to the ability to write and maintain large codebases, scaling up to
+large teams, and large systems. Go is "boring". It's about expressing algorithms (and business 
+logic), not the type system.
+
+The story goes that Go was designed while waiting for other programs to compile.
+-->
+
+---
+layout: center
+---
+
+# Who's using Go?
+Go is arguably the language of the Cloud.
+
+<div class="max-w-[600px]">
+
+* Docker / Containerd
+* Google: DL, GCP, Kubernetes, Search Indexing, Youtube, more
+* Hashicorp: Consul, Nomad, Packer, Terraform, Vault
+* Prometheus / Grafana
+* Out of 31 [graduated CNCF projects](https://contribute.cncf.io/contributors/#graduated-projects), 23 are written in Go
+* Cloudflare, Dropbox, Meta, Microsoft, Monzo, Netflix, PayPal, Salesforce, Shopify, SoundCloud, Trivago, Twitch.tv, Uber, [many more...](https://go.dev/solutions/case-studies)
+* Ice Travel Group 😁
+
+</div>
+
 
 ---
 transition: fade-out
@@ -126,7 +246,7 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
-layout: top-title-two-cols
+layout: two-cols
 color: cyan-light
 columns: is-6-6
 ---

@@ -13,18 +13,33 @@
     --cs-dark-cyan: #007d9c;
     --cs-gutter-grey: #4b5263;
     --cs-comment-grey: #5c6370;
+
+    /* Theming... */
+    --cs-background: var(--cs-dark-cyan);
+    --cs-highlight: var(--cs-light-yellow);
 }
 
-/*.neversink-go-scheme,*/
-/*.ns-c-go-scheme {*/
-/*    --neversink-bg-color: var(--cs-dark-cyan);*/
-/*    --neversink-bg-code-color: #a5f3fc;*/
-/*    --neversink-fg-code-color: #06b6d4;*/
-/*    --neversink-fg-color: #0891b2;*/
-/*    --neversink-text-color: var(--cs-white);*/
-/*    --neversink-border-color: var(--cs-light-yellow);*/
-/*    --neversink-highlight-color: var(--cs-light-yellow);*/
-/*    --neversink-admon-bg-color: #cffafe;*/
-/*    --neversink-admon-border-color: #67e8f9;*/
-/*    --neversink-admon-text-color: var(--cs-white);*/
-/*}*/
+html,
+body,
+#app,
+#page-root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+.slidev-layout {
+    background-color: var(--cs-background);
+}
+
+.slidev-layout a,
+.slidev-layout a:hover {
+    color: var(--cs-highlight);
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4,
+.slidev-layout h5,
+.slidev-layout h6 {
+    font-weight: 500;
+}
