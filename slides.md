@@ -1,18 +1,16 @@
 ---
 # You can also start simply with 'default'
-theme: seriph
+theme: ./theme
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: An Introduction to Go
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+  ## An Introduction to Go
+  A quick run through of the what, the why, and the how of Go
 # apply unocss classes to the current slide
-class: text-center
+#class: text-center
 # https://sli.dev/features/drawing
 drawings:
   persist: false
@@ -20,28 +18,42 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
+layout: cover
+color: go
 ---
 
-# Welcome to Slidev
+# An Introduction to Go
 
-Presentation slides for developers
+A quick run through of the what, the why, and the how of Go
 
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
-</div>
-
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
+<div class="absolute bottom-10 opacity-66">
+  <small>Elliot Wright // <CurrentYear /></small>
 </div>
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
+
+---
+layout: default
+color: cyan-light
+class: flex flex-col justify-center
+---
+
+# What we're about to cover
+
+<div class="ns-c-tight">
+
+* What is Go?
+* Who's using Go?
+* Why use Go?
+* Go in Action?
+* Resources to get you started
+ 
+</div>
+
+These slides are also [available online](https://pres-go-intro.pages.dev) for you to view later, if
+you want!
 
 ---
 transition: fade-out
@@ -114,9 +126,29 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
+layout: top-title-two-cols
+color: cyan-light
+columns: is-6-6
+---
+
+::title::
+
+Beep Boop
+
+::left::
+
+Hello, World! This is a slidev slide. You can use the `layout` frontmatter to change the layout of your slides.
+
+::right::
+
+This is me testing a second column.
+
+---
 layout: two-cols
 layoutClass: gap-16
 ---
+
+::left::
 
 # Table of contents
 

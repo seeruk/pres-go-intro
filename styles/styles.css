@@ -1,0 +1,30 @@
+:root {
+    --cs-black: #000000;
+    --cs-white: #ffffff;
+    --cs-pink: #c85e7a;
+    --cs-dark-red: #be5046;
+    --cs-green: #5fda64;
+    --cs-dark-green: #3a6e11;
+    --cs-light-yellow: #fddd00;
+    --cs-blue: #61afef;
+    --cs-purple: #542c7d;
+    --cs-cyan: #5dc9e2;
+    --cs-med-cyan: #50b7e0;
+    --cs-dark-cyan: #007d9c;
+    --cs-gutter-grey: #4b5263;
+    --cs-comment-grey: #5c6370;
+}
+
+/*.neversink-go-scheme,*/
+/*.ns-c-go-scheme {*/
+/*    --neversink-bg-color: var(--cs-dark-cyan);*/
+/*    --neversink-bg-code-color: #a5f3fc;*/
+/*    --neversink-fg-code-color: #06b6d4;*/
+/*    --neversink-fg-color: #0891b2;*/
+/*    --neversink-text-color: var(--cs-white);*/
+/*    --neversink-border-color: var(--cs-light-yellow);*/
+/*    --neversink-highlight-color: var(--cs-light-yellow);*/
+/*    --neversink-admon-bg-color: #cffafe;*/
+/*    --neversink-admon-border-color: #67e8f9;*/
+/*    --neversink-admon-text-color: var(--cs-white);*/
+/*}*/
