@@ -46,8 +46,8 @@ layout: center
 
 * What is Go?
 * Why use Go?
-* Go in Action
-* Resources to get you started
+* How to Go
+* Where to Go
 
 These slides are also [available online](https://pres-go-intro.pages.dev) for you to view later, if
 you want!
@@ -95,7 +95,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, 世界")
+	fmt.Println("Hello, World!")
 }
 ```
 
@@ -123,57 +123,195 @@ layout: center
 The team behind Go saw problems with how software was being developed at Google, and designed the 
 language to address issues faced "today".
 
-* Complexity (of the language, tooling, and ecosystem)
+<div class="flex gap-8">
+
+<div class="basis-3/5">
+
 * Missing or poor concurrency support
+* Complexity (of the language, tooling, and ecosystem)
 * Lack of scalability
 * "Insane" build times
 
-Go is designed to be a clean, small, compiled language with modern features, aiming to tackle
-improving productivity in an era of multicore processors, networked systems, and large codebases.
+</div>
 
-It's about **expressing algorithms**, not the type system.
+<div class="basis-2/5">
 
-<img v-drag="[648,191,170,148]" src="./images/compiling.png" />
+![Compiling](./images/compiling.png)
+
+</div>
+
+</div>
 
 </div>
 
 <!--
-Some of this is taken from a presentation that one of the creators of Go gave.
-https://go.dev/talks/2015/gophercon-goevolution.slide#5
-
-More background:
-https://go.dev/talks/2012/splash.article#TOC_3.
-
-Go is very much a "batteries-included" language.
-
-Go was initially built in 2007 and subsequently released to the public in 2009.
-
 Lack of scalability here refers to the ability to write and maintain large codebases, scaling up to
 large teams, and large systems. Go is "boring". It's about expressing algorithms (and business 
 logic), not the type system.
 
 The story goes that Go was designed while waiting for other programs to compile.
+
+Go is designed to be a clean, small, compiled language with modern features, aiming to tackle
+improving productivity in an era of multicore processors, networked systems, and large codebases.
+
+Go was initially built in 2007 and subsequently released to the public in 2009.
+
+Some of this is taken from a presentation that one of the creators of Go gave.
+https://go.dev/talks/2015/gophercon-goevolution.slide#5
+
+More background:
+https://go.dev/talks/2012/splash.article#TOC_3.
 -->
+
+---
+layout: quote
+---
+
+# It's about **expressing algorithms**, not the type system.
+
+\- Robert Griesemer, Go co-creator
+
+---
+layout: section
+---
+
+# Why use Go?
+
+(Or, why I like Go)
+
+---
+layout: two-cols
+class: p-4
+---
+
+<div class="flex h-full items-center justify-center">
+
+# It's simple and gets out of the way
+
+</div>
+
+::right::
+
+<div class="flex h-full items-center justify-center">
+  <img src="./images/fighting-code.png" />
+</div>
+
+---
+layout: two-cols
+class: p-4
+---
+
+<div class="flex h-full items-center justify-center">
+  <img src="./images/compiling-fast.png" />
+</div>
+
+::right::
+
+<div class="flex h-full items-center justify-center">
+
+# It's fast, efficient, and compiles to a native binary with no runtime dependencies
+
+</div>
+
+---
+layout: two-cols
+class: p-4
+---
+
+<div class="flex h-full items-center justify-center">
+
+# It has tools built-in to format, lint, test, build, and profile your code, and manage your dependencies
+
+</div>
+
+::right::
+
+<div class="flex h-full items-center justify-center">
+  <img src="./images/batteries.png" />
+</div>
+
+---
+layout: two-cols
+class: p-4
+---
+
+<div class="flex h-full items-center justify-center">
+  <img src="./images/community.png" />
+</div>
+
+::right::
+
+<div class="flex h-full items-center justify-center">
+
+# It has a great standard library, and a community that rallies around it
+
+</div>
+
+---
+layout: two-cols
+---
+
+<div class="flex h-full items-center justify-center">
+
+# It has sane concurrency primitives promoting safe and efficient concurrent programming
+
+</div>
+
+::right::
+
+<div class="flex h-full items-center justify-center">
+  <img src="./images/communicating.png" />
+</div>
+
+---
+layout: two-cols
+class: p-4
+---
+
+<div class="flex h-full items-center justify-center">
+  <img src="./images/balance.png" />
+</div>
+
+::right::
+
+<div class="flex h-full items-center justify-center">
+
+# It strikes a good balance between verbosity, safety, and control
+
+</div>
 
 ---
 layout: center
 ---
 
-# Who's using Go?
+# You'd be in good company
 Go is arguably the language of the Cloud.
 
 <div class="max-w-[600px]">
 
 * Docker / Containerd
-* Google: DL, GCP, Kubernetes, Search Indexing, Youtube, more
+* Google: DL, GCP, Kubernetes, Search Indexing, YouTube, more
 * Hashicorp: Consul, Nomad, Packer, Terraform, Vault
 * Prometheus / Grafana
 * Out of 31 [graduated CNCF projects](https://contribute.cncf.io/contributors/#graduated-projects), 23 are written in Go
-* Cloudflare, Dropbox, Meta, Microsoft, Monzo, Netflix, PayPal, Salesforce, Shopify, SoundCloud, Trivago, Twitch.tv, Uber, [many more...](https://go.dev/solutions/case-studies)
+* Cloudflare, Dropbox, Heroku, Meta, Microsoft, Monzo, Netflix, PayPal, Salesforce, Shopify, SoundCloud, Trivago, Twitch.tv, Uber, [many more...](https://go.dev/solutions/case-studies)
 * Ice Travel Group 😁
 
 </div>
 
+---
+layout: section
+---
+
+# How to Go
+
+---
+layout: section
+---
+
+# Where to Go
+
+(Next)
 
 ---
 transition: fade-out
@@ -708,7 +846,7 @@ Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML D
 ---
 foo: bar
 dragPos:
-  square: 800,240,167,_,-16
+  square: -40,0,0,0
 ---
 
 # Draggable Elements
