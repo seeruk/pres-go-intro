@@ -143,8 +143,7 @@ language to address issues faced "today".
 
 <!--
 Lack of scalability here refers to the ability to write and maintain large codebases, scaling up to
-large teams, and large systems. Go is "boring". It's about expressing algorithms (and business 
-logic), not the type system.
+large teams, and large systems.
 
 The story goes that Go was designed while waiting for other programs to compile.
 
@@ -217,7 +216,7 @@ class: p-4
 
 <div class="flex h-full items-center justify-center">
 
-# It has tools built-in to format, lint, test, build, and profile your code, and manage your dependencies
+# It has tools built-in to format, lint, test, build, and profile your code, and handle dependency management
 
 </div>
 
@@ -259,6 +258,12 @@ layout: two-cols
 <div class="flex h-full items-center justify-center">
   <img src="./images/communicating.png" />
 </div>
+
+<!--
+Do not communicate by sharing memory; instead, share memory by communicating.
+
+https://go.dev/blog/codelab-share
+-->
 
 ---
 layout: two-cols
@@ -303,9 +308,57 @@ layout: section
 # How to Go
 
 ---
+layout: center
+---
+
+# Basic Go Syntax
+
+<<< @/snippets/overview/main.go {*|1|3-6|8-11|13|14-19|21-28|*}{lines:true,maxHeight:'353px'}
+
+---
+layout: center
+---
+
+# Structs and Interfaces
+
+<<< @/snippets/interfaces/main.go {*|8-10|12-18|20-22|24-29|*}{lines:true,maxHeight:'353px'}
+
+<!--
+No need to preemptively create interfaces.
+Define interfaces where a type would be used, not where the type is defined.
+-->
+
+---
 layout: section
 ---
 
 # Where to Go
 
 (Next)
+
+---
+layout: center
+---
+
+# Learning Resources
+
+* A Tour of Go: https://go.dev/tour/welcome/1
+* Go by Example: https://gobyexample.com/
+* CodeReviewComments: https://go.dev/wiki/CodeReviewComments
+* Effective Go: https://go.dev/doc/effective_go
+* Documentation: https://go.dev/doc/
+* Other learning resources: https://go.dev/learn/
+
+Give it a Go! (😩)
+
+---
+layout: center
+---
+
+# Thank you!
+
+<div class="text-center">
+
+Any questions?
+
+</div>
