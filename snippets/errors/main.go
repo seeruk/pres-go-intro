@@ -29,13 +29,13 @@ func getCat(name string) (string, error) {
 }
 
 func main() {
-	catName, err := getCat("Rosa") // Try to get a cat
+	catName, err := getCat("Lucifer") // Try to get a cat
 	switch {
 	case errors.Is(err, ErrNotAvailable):
-		fmt.Println("Error:", err, "Try a different cat! 🐱")
+		fmt.Printf("Error: %v. Try a different cat! 🐱\n", err)
 		return
 	case errors.Is(err, ErrOutOfStock):
-		fmt.Println("Error:", err, "Come back later! 😿")
+		fmt.Printf("Error: %v. Come back later! 😿\n", err)
 		return
 	case err != nil:
 		fmt.Println("Error:", err)

@@ -313,7 +313,7 @@ layout: center
 
 # Basic Go Syntax
 
-<<< @/snippets/overview/main.go {*|1|3-6|8-11|13|14-19|21-28|*}{lines:true,maxHeight:'353px'}
+<<< @/snippets/overview/main.go {*|1|3-6|8-11|13|14-19|21-28}{lines:true,maxHeight:'353px'}
 
 ---
 layout: center
@@ -321,11 +321,59 @@ layout: center
 
 # Structs and Interfaces
 
-<<< @/snippets/interfaces/main.go {*|8-10|12-18|20-22|24-29|*}{lines:true,maxHeight:'353px'}
+<<< @/snippets/interfaces/main.go {*|8-10|12-18|20-22|24-30|12-18}{lines:true,maxHeight:'353px'}
 
 <!--
 No need to preemptively create interfaces.
 Define interfaces where a type would be used, not where the type is defined.
+
+No classes. No inheritance (composition). No explicit implementing interfaces.
+-->
+
+---
+layout: center
+---
+
+# Error Handling & Multiple Return Values
+
+<<< @/snippets/errors/main.go {*|8-11|14|14-29|23|26|28|32|33-43|31-46}{lines:true,maxHeight:'353px'}
+
+<!--
+Sentinel errors, or errors that are defined as constants
+
+No exceptions. No throwing / catching.
+-->
+
+---
+layout: center
+---
+
+# Concurrency & Goroutines
+
+<<< @/snippets/concurrency/main1.go {*}{lines:true,maxHeight:'353px'}
+
+---
+layout: center
+---
+
+# Concurrency & Goroutines
+
+<<< @/snippets/concurrency/main2.go {*}{lines:true,maxHeight:'353px'}
+
+<!--
+Don't communicate by sharing memory, share memory by communicating
+-->
+
+---
+layout: center
+---
+
+# Concurrency & Goroutines
+
+<<< @/snippets/concurrency/main3.go {*|7-16|18-24|27-29|31-37|39-41}{lines:true,maxHeight:'353px'}
+
+<!--
+https://go.dev/blog/pipelines
 -->
 
 ---
