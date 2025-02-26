@@ -26,8 +26,7 @@ func sub1(n int) int {
 func main() {
 	input := make(chan int)
 	squared := pipe(input, sq)
-	output1 := pipe(squared, sub1)
-	output := pipe(output1, sub1)
+	output := pipe(squared, sub1)
 
 	go func() {
 		for i := 0; i < 10; i++ {
